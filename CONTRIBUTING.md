@@ -53,6 +53,10 @@ just install
 just build
 ```
 
+If you don't have write access to the upstream repository, fork it on GitHub and clone your personal
+fork instead; you can then push branches to your fork and open pull requests against
+`browserbase/stagehand` from there.
+
 `just install` installs the pnpm workspace, syncs the Python environment with `uv`, and downloads the
 Go modules. `pnpm install` on its own covers only the TypeScript workspace, which leaves the Python
 and Go checks unable to run.
